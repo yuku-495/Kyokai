@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ - ヴォルシア</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+      <ul class="nav-links">
+        <li><a class="old-button" href="index.html">[トップ]</a></li>
+        <li><a class="old-button" href="service.html"> [サービス内容]</a></li>
+        <li><a class="old-button" href="voices.html"> [お客様の声]</a></li>
+        <li><a class="old-button" href="contact.html"> [お問い合わせ]</a></li>
+      </ul>
+    
+      <div class="admin-link">
+        <a class="old-button" href="admin.html">[管理者用]</a>
+      </div>
+    </div>
+  <h1>お問い合わせ</h1>
+  <p>ご不明点のある方、または越えたい境界がある方は以下まで。</p>
+  <p>📧 <a href="mailto:borderless@Cmail.conn">borderless@Cmail.conn</a></p>
+  <hr>
+  <h2>フォームからのご相談</h2>
+  <form onsubmit="alert('送信完了しました。入力いただいたメールアドレスにサービスの詳細を送信いたします。（返信は手動のため、少々時間がかかります）'); location.reload(); return false;">
+    <p>
+      お名前（仮名可）：<br>
+      <input type="text" name="name" required>
+    </p>
+    <p>
+        メールアドレス：<br>
+        <input type="text" name="name" required>
+      </p>
+    <p>
+      越えたい境界の種類：<br>
+      <select name="boundary">
+        <option>現実と幻想</option>
+        <option>生と死</option>
+        <option>物理的距離</option>
+        <option>感情の壁</option>
+        <option>その他</option>
+      </select>
+    </p>
+    <p>
+      ご相談内容：<br>
+      <textarea name="message" rows="5" cols="40" required></textarea>
+    </p>
+    <p>
+      <button type="submit"> 境界を超える準備はできているか？</button>
+    </p>
+  </form>
+  <p>現実には成しえない、不可能に思えることも。ひとまず相談してみてください。</p>
+  <form onsubmit="return checkSecretCode()">
+    <label for="code">3ケタの数字を入力してください：</label><br>
+    <input type="text" id="secretCode" name="code">
+    <input type="submit" value="送信">
+  </form>
+  
+  <script>
+    function checkSecretCode() {
+      const code = document.getElementById("secretCode").value.trim();
+  
+      if (code === "810") {
+        window.location.href = "https://dic.pixiv.net/a/%E9%87%8E%E7%8D%A3%E5%85%88%E8%BC%A9"; 
+        return false; // 送信止める（リダイレクトする）
+      } else {
+        alert("そのコードでは境界は開きません……");
+        return false; // 通常の送信も止める
+      }
+    }
+  </script>
+  <p><a href="index.html">← トップに戻る</a></p>
+</body>
+</html>

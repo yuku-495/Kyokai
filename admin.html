@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>管理者用 - ヴォルシア</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <ul class="nav-links">
+      <li><a class="old-button" href="index.html">[トップ]</a></li>
+      <li><a class="old-button" href="service.html"> [サービス内容]</a></li>
+      <li><a class="old-button" href="voices.html"> [お客様の声]</a></li>
+      <li><a class="old-button" href="contact.html"> [お問い合わせ]</a></li>
+    </ul>
+  
+    <div class="admin-link">
+      <a class="old-button" href="admin.html">[管理者用]</a>
+    </div>
+  </div>
+    <form onsubmit="return checkSecretCode()">
+        <label for="code">3ケタの数字を入力してください：</label><br>
+        <input type="text" id="secretCode" name="code">
+        <input type="submit" value="送信">
+      </form>
+      
+      <script>
+        function checkSecretCode() {
+          const code = document.getElementById("secretCode").value.trim();
+      
+          if (code === "810") {
+            window.location.href = "https://dic.pixiv.net/a/%E9%87%8E%E7%8D%A3%E5%85%88%E8%BC%A9"; 
+            return false; // 送信止める（リダイレクトする）
+          } else {
+            alert("そのコードでは境界は開きません……");
+            return false; // 通常の送信も止める
+          }
+        }
+      </script>
+      <p><a href="index.html">← トップに戻る</a></p>
+</body>

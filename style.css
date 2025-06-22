@@ -1,0 +1,130 @@
+body {
+    color: aliceblue;
+    background-color: rgb(36, 12, 41);
+    background-image: url("img/noise.gif");
+    background-repeat: repeat;
+    text-align: center;
+    font-family: "HGS明朝B", "MS PGothic", "Osaka－等幅", "Courier New", monospace;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #192a82;
+    text-shadow: 0 0 5px #000000;
+    margin-bottom: 4%;
+  }
+  
+  h2{
+    margin-top: 10%;
+  }
+  
+  h4{
+    color: #fe1515;
+  }
+  a {
+    color: yellow;
+    text-decoration: none;
+    font-family: "ＭＳ Ｐゴシック", "MS PGothic", "Osaka－等幅", "Courier New", monospace;
+  }
+
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  p {
+    color: red;
+    margin-bottom: 80px;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: "ＭＳ Ｐゴシック", "MS PGothic", "Osaka－等幅", "Courier New", monospace;
+  } 
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #111;
+    border-right: 2px dashed #676767;
+    padding-top: 20px;
+    z-index: 1000;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .sidebar a {
+    color: #a0a0a0;
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px;
+  }
+
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+  
+  .admin-link {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.8em;
+    opacity: 0.6;
+    z-index: 999;
+  }
+  
+  body {
+    margin-left: 170px; 
+  }
+
+  .old-button {
+    font-family: "HGS明朝B", monospace !important;
+    color: #cc00cc !important;
+    text-decoration: underline !important;
+    background-color: transparent;
+    border: none!important;
+    padding: 0;
+  }
+  
+  .old-button:hover {
+    color: red !important;
+    text-decoration: underline !important;
+    box-shadow: inset 1px 1px 2px #aaa !important;
+  }
+
+  .service-table {
+    width: 105%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #000;
+    color: #acacac;
+    font-family: "ＭＳ Ｐゴシック", monospace;
+  }
+  
+  .service-table th, .service-table td {
+    border: 1px solid #939393;
+    padding: 60px;
+    text-align: left;
+  }
+  
+  .service-table th {
+    background-color: #111;
+    color: #80727b;
+  }
